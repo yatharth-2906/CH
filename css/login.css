@@ -27,7 +27,7 @@ body{
   justify-content: center;
   align-items: center;
 
-    background: url('../assets/bg_body.jpg');
+    background: url('../assets/login_bg_black.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,6 +159,7 @@ input[type='text'], input[type='email'], textarea, input[type='password']{
     border-radius: 8px; 
 
     background: url('../assets/login-bg-copy.jpeg');
+    /* background: url('../assets/bg_login_black.jpg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
