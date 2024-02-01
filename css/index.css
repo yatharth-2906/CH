@@ -41,7 +41,7 @@ body{
 /* fonts */
 @font-face {
   font-family: 'Rubik Regular';
-  src: url("/assets/fonts/Rubik-Regular.ttf") format("ttf"),
+  src: url("../assets/fonts/Rubik-Regular.ttf") format("ttf"),
 }
 
 h1,h2,h3,h4{
@@ -96,6 +96,10 @@ p,a,li{
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 1em;
+}
+
+.sign_out{
+    display: none;
 }
   
 .sign_up_btn:hover{
@@ -174,6 +178,20 @@ p,a,li{
     color: white;
 }
 
+.submit_btn{
+    background-color: var(--primary);
+    border: 2px solid black;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+  
+.submit_btn:hover{
+    background-color: black;
+    color: white;
+}
+
 .soil_health{
     display: flex;
     flex-direction: column;
@@ -209,11 +227,12 @@ p,a,li{
 }
 
 .soil_health_img_container{
+    object-fit: contain;
     width: 90vw;
 }
 
 .soil_health_img{
-    width: 100vw;
+    width: 100%;
 }
 
 .soil_health_para_btn{

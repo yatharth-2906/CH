@@ -53,7 +53,7 @@ body{
 /* fonts */
 @font-face {
   font-family: 'Rubik Regular';
-  src: url("/assets/fonts/Rubik-Regular.ttf") format("ttf"),
+  src: url("../assets/fonts/Rubik-Regular.ttf") format("ttf"),
 }
 
 h1,h2,h3,h4{

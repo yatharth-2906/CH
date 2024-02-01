@@ -84,6 +84,8 @@
 
             createUserWithEmailAndPassword(auth, email_input.value, password_input.value).then(credentials => {
                 console.log(credentials);
+                localStorage.setItem("credentials", JSON.stringify(credentials));
+                window.location.assign('index.html');
             }).catch((error) => {
                 alert(error);
                 const errorCode = error.code;
