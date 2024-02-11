@@ -1,11 +1,10 @@
 /* variables */
-:root{
-    /* --primary: #f2fcf0; */
-    --primary: white;
-  }
-  
+:root {
+    --primary: rgb(215, 255, 243);;
+}
+
 /* reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,54 +13,59 @@
     background-color: var(--primary);
     font-family: 'Rubik Regular';
 }
-  
+
 /* base styles */
-body{
-  background: var(--secondary);
-  /* overflow-x: hidden; */
+body {
+    background: var(--secondary);
+    /* overflow-x: hidden; */
 }
 
-.button{
-  background: none;
-  border: 2px solid var(--button-color);
-  color: var(--button-color);
-  padding: 6px 12px;
-  border-radius: 20px;
-  text-transform: uppercase;
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
-  display: inline-block;
-  font-size: 1em;
+.button {
+    background: none;
+    border: 2px solid var(--button-color);
+    color: var(--button-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    font-size: 1em;
 }
 
-.button:hover{
-  color: #222;
-  background: var(--primary);
+.button:hover {
+    color: #222;
+    background: var(--primary);
 }
 
 /* fonts */
 @font-face {
-  font-family: 'Rubik Regular';
-  src: url("../assets/fonts/Rubik-Regular.ttf") format("ttf"),
+    font-family: 'Rubik Regular';
+    src: url("../assets/fonts/Rubik-Regular.ttf") format("ttf"),
 }
 
-h1,h2,h3,h4{
-  color: #DDDBFF;
-  font-weight: normal;
-  line-height: 1.4em;
+h1,
+h2,
+h3,
+h4 {
+    color: #DDDBFF;
+    font-weight: normal;
+    line-height: 1.4em;
 }
 
-p,a,li{
-  color: #9893D8;
-  line-height: 1.4em;
-  font-size: 1em;
+p,
+a,
+li {
+    color: #9893D8;
+    line-height: 1.4em;
+    font-size: 1em;
 }
 
 /* mobile styles */
-.nav_bar{
+.nav_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: min(80px,20vw);
+    height: min(80px, 20vw);
     border-bottom: 2px solid black;
     box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.8);
     /* background-color: var(--primary); */
@@ -71,7 +75,7 @@ p,a,li{
     background-color: var(--primary);
 } */
 
-.dropbtn{
+.dropbtn {
     margin: 0 20px;
     font-size: 2em;
     background-color: var(--primary);
@@ -80,15 +84,15 @@ p,a,li{
     /* padding: 20px; */
 }
 
-.dropdown-content{
+.dropdown-content {
     display: none;
 }
 
-.nav-content{
+.nav-content {
     display: none;
 }
 
-.sign_up_btn{
+.sign_up_btn {
     margin: 0 20px;
     background-color: black;
     border: 2px solid black;
@@ -98,31 +102,31 @@ p,a,li{
     font-size: 1em;
 }
 
-.sign_out{
+.sign_out {
     display: none;
 }
-  
-.sign_up_btn:hover{
+
+.sign_up_btn:hover {
     background-color: var(--primary);
     color: black;
 }
 
-.brand_img{
+.brand_img {
     width: 100%;
 }
 
-.brand_desc{
+.brand_desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.brand_desc_heading{
+.brand_desc_heading {
     width: 90vw;
 }
 
-.brand_desc_heading h1{
+.brand_desc_heading h1 {
     color: black;
     font-weight: 900;
     font-size: 2.4em;
@@ -130,27 +134,27 @@ p,a,li{
     line-height: 1.4em;
 }
 
-.brand_para{
+.brand_para {
     display: flex;
     flex-direction: column;
     width: 90vw;
 }
 
-.brand_para1{
+.brand_para1 {
     color: black;
     font-size: 1em;
     margin: 10px;
     line-height: 1.4em;
 }
 
-.brand_para2{
+.brand_para2 {
     margin-top: 10%;
     display: flex;
     justify-content: space-evenly;
     line-height: 1.4em;
 }
 
-.learn_more_btn{
+.learn_more_btn {
     background-color: black;
     border: 2px solid black;
     color: white;
@@ -158,27 +162,13 @@ p,a,li{
     border-radius: 20px;
     font-size: 1em;
 }
-  
-.learn_more_btn:hover{
+
+.learn_more_btn:hover {
     background-color: var(--primary);
     color: black;
 }
 
-.sign_up_btn_contrast{
-    background-color: var(--primary);
-    border: 2px solid black;
-    color: black;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 1em;
-}
-  
-.sign_up_btn_contrast:hover{
-    background-color: black;
-    color: white;
-}
-
-.submit_btn{
+.sign_up_btn_contrast {
     background-color: var(--primary);
     border: 2px solid black;
     color: black;
@@ -186,24 +176,38 @@ p,a,li{
     border-radius: 20px;
     font-size: 1em;
 }
-  
-.submit_btn:hover{
+
+.sign_up_btn_contrast:hover {
     background-color: black;
     color: white;
 }
 
-.soil_health{
+.submit_btn {
+    background-color: var(--primary);
+    border: 2px solid black;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+.submit_btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.soil_health {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.soil_health_text{
+.soil_health_text {
     width: 90vw;
 }
 
-.soil_health_heading h2{
+.soil_health_heading h2 {
     color: black;
     font-weight: 900;
     font-size: 2.4em;
@@ -211,14 +215,14 @@ p,a,li{
     line-height: 1.4em;
 }
 
-.soil_health_para{
+.soil_health_para {
     color: black;
     font-size: 1em;
     margin: 10px;
     line-height: 1.4em;
 }
 
-.soil_health_list li{
+.soil_health_list li {
     list-style-type: none;
     color: black;
     font-size: 1em;
@@ -226,23 +230,23 @@ p,a,li{
     line-height: 1.4em;
 }
 
-.soil_health_img_container{
+.soil_health_img_container {
     object-fit: contain;
     width: 90vw;
 }
 
-.soil_health_img{
+.soil_health_img {
     width: 100%;
 }
 
-.soil_health_para_btn{
+.soil_health_para_btn {
     margin: 5% 0;
     display: flex;
     justify-content: space-evenly;
     line-height: 1.4em;
 }
 
-.learn_more_btn_contrast{
+.learn_more_btn_contrast {
     background-color: var(--primary);
     border: 2px solid black;
     color: black;
@@ -250,13 +254,13 @@ p,a,li{
     border-radius: 20px;
     font-size: 1em;
 }
-  
-.learn_more_btn_contrast:hover{
+
+.learn_more_btn_contrast:hover {
     background-color: black;
     color: white;
 }
 
-.sign_up_btn_plane{
+.sign_up_btn_plane {
     background-color: var(--primary);
     color: black;
     font-weight: 530;
@@ -264,21 +268,21 @@ p,a,li{
     border-radius: 20px;
     font-size: 1em;
 }
-  
-.sign_up_btn_plane:hover{
+
+.sign_up_btn_plane:hover {
     font-weight: normal;
     background-color: black;
     color: white;
 }
 
-.rev{
+.rev {
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.rev_heading{
+.rev_heading {
     width: 90vw;
     text-align: center;
     color: black;
@@ -288,7 +292,7 @@ p,a,li{
     line-height: 1.4em;
 }
 
-.rev_para{
+.rev_para {
     width: 90vw;
     text-align: center;
     color: black;
@@ -297,7 +301,7 @@ p,a,li{
     line-height: 1.4em;
 }
 
-.services{
+.services {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -305,7 +309,7 @@ p,a,li{
 
 }
 
-.services_element{
+.services_element {
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -313,20 +317,20 @@ p,a,li{
     justify-content: center;
 }
 
-.services_img{
+.services_img {
     width: 30%;
 }
 
-.services_head{
+.services_head {
     text-align: center;
     color: black;
     font-weight: 900;
-    font-size: 2.2em;
+    font-size: 1.8em;
     margin: 10px 0;
     line-height: 1.4em;
 }
 
-.services_para{
+.services_para {
     text-align: center;
     color: black;
     font-size: 1em;
@@ -334,26 +338,26 @@ p,a,li{
     line-height: 1.4em;
 }
 
-.logo_img_container{
+.logo_img_container {
     display: flex;
     justify-content: center;
 }
 
-.footer_div .footer_rem{
+.footer_div .footer_rem {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.footer_actions{
+.footer_actions {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
 }
 
-.footer_actions a{
+.footer_actions a {
     color: black;
     font-size: 1em;
     font-weight: 600;
@@ -361,17 +365,17 @@ p,a,li{
     line-height: 1.4em;
 }
 
-.footer_line_container{
+.footer_line_container {
     display: flex;
     justify-content: center;
 }
 
-.footer_line{
+.footer_line {
     width: 80vw;
     border: 2px solid black;
 }
 
-.copyright{
+.copyright {
     text-align: center;
     color: black;
     font-size: 1em;
@@ -379,14 +383,14 @@ p,a,li{
     line-height: 1em;
 }
 
-.policies{
+.policies {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.policies a{
+.policies a {
     text-align: center;
     color: black;
     font-size: 1em;
@@ -394,14 +398,14 @@ p,a,li{
     line-height: 1em;
 }
 
-.btn_transition{
+.btn_transition {
     transition: all;
     transition-duration: 0.6s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
     transition-delay: 0s;
 }
 
-.nav_btn_container:hover .dropdown-content{
+.nav_btn_container:hover .dropdown-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -409,15 +413,16 @@ p,a,li{
     width: 100vw;
     height: 30vh;
     position: absolute;
-    top: min(80px,20vw);
+    left: 0px;
+    top: min(80px, 20vw);
 }
 
-.dropdown-content a{
+.dropdown-content a {
     width: 100vw;
     height: 33.33%;
     padding: 20px 0;
     text-align: center;
-    color: black;
+    /* color: black; */
     font-size: 1.1em;
     font-weight: 600;
     border: 1px solid rgb(72, 67, 67);
@@ -425,7 +430,7 @@ p,a,li{
     line-height: 1.4em;
 }
 
-.form_heading{
+.form_heading {
     text-align: center;
     color: black;
     font-weight: 900;
@@ -434,7 +439,7 @@ p,a,li{
     line-height: 1.4em;
 }
 
-.form_para{
+.form_para {
     text-align: center;
     color: black;
     font-size: 1em;
@@ -442,14 +447,14 @@ p,a,li{
     line-height: 1.4em;
 }
 
-.form_div{
+.form_div {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
 }
 
-.details-item{
+.details-item {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -458,14 +463,14 @@ p,a,li{
     /* gap: 20px; */
 }
 
-.details{
+.details {
     width: 100%;
 }
 
-.details-icon{
+.details-icon {
     height: 70px;
     width: 70px;
-    background-color: white;
+    background-color: transparent;
     text-align: center;
     border: 2px solid black;
     border-radius: 50%;
@@ -474,9 +479,9 @@ p,a,li{
 .details-icon i {
     font-size: 30px;
     line-height: 70px;
-  }
+}
 
-.form_detail_heading{
+.form_detail_heading {
     text-align: center;
     color: black;
     font-weight: 900;
@@ -485,7 +490,7 @@ p,a,li{
     line-height: 1.4em;
 }
 
-#contact-form{
+#contact-form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -493,29 +498,29 @@ p,a,li{
     align-items: center;
 }
 
-#contact-form *{
+#contact-form * {
     margin: 15px 0;
 }
 
-.inputt_container{
+.inputt_container {
     width: 100%;
     text-align: center;
     height: 3em;
 }
 
-.inputt{
+.inputt {
     width: 80%;
     height: 100%;
     border: 2px solid black;
     /* border-radius: 10px; */
 }
 
-.form-textarea-container{
+.form-textarea-container {
     width: 80%;
     height: 8em;
 }
 
-#form-textarea{
+#form-textarea {
     width: 100%;
     height: 100%;
     border: 2px solid black;
@@ -529,7 +534,10 @@ p,a,li{
     line-height: 1.4em;
 } */
 
-input[type='text'], input[type='email'], textarea, input[type='password']{
+input[type='text'],
+input[type='email'],
+textarea,
+input[type='password'] {
     padding: 10px;
     color: black;
     font-size: 1.6em;
@@ -538,16 +546,16 @@ input[type='text'], input[type='email'], textarea, input[type='password']{
 
 
 /* small tablet styles */
-@media screen and (min-width: 620px){
-    .nav_btn_container{
+@media screen and (min-width: 620px) {
+    .nav_btn_container {
         display: none;
     }
-    
-    .nav-content{
+
+    .nav-content {
         display: inline;
     }
 
-    .nav-content a{
+    .nav-content a {
         text-align: center;
         color: black;
         font-size: 1.1em;
@@ -556,124 +564,125 @@ input[type='text'], input[type='email'], textarea, input[type='password']{
         line-height: 1.4em;
     }
 
-    .brand_desc{
+    .brand_desc {
         flex-direction: row;
     }
-    
-    .brand_desc_heading{
+
+    .brand_desc_heading {
         width: 50vw;
     }
-    
-    .brand_para{
+
+    .brand_para {
         width: 50vw;
         height: 100%;
     }
 
-    .brand_para1{
+    .brand_para1 {
         margin: 0;
         font-size: 1.2em;
         margin-top: 1.4em;
     }
-    
-    .brand_para2{
+
+    .brand_para2 {
         margin-top: 8%;
         align-items: center;
     }
 
-    .soil_health{
+    .soil_health {
         flex-direction: row;
     }
-    
-    .soil_health_text{
+
+    .soil_health_text {
         width: 50vw;
     }
-    
-    .soil_health_heading h2{
+
+    .soil_health_heading h2 {
         font-size: 2em;
     }
-    
-    .soil_health_img_container{
+
+    .soil_health_img_container {
         height: 100%;
         width: 50vw;
     }
-    
-    .soil_health_img{
+
+    .soil_health_img {
         width: 90%;
         height: 100%;
     }
 
-    .soil_health_list li{
+    .soil_health_list li {
         margin-top: 0;
         line-height: 1em;
     }
 
-    .soil_health_para_btn{
+    .soil_health_para_btn {
         margin: 5% 10px;
         justify-content: flex-start;
     }
 
-    .rev_para{
+    .rev_para {
         font-size: 1.6em;
     }
 
-    .services{
+    .services {
         flex-direction: row;
+        align-items: flex-start;
     }
-    
-    .services_element{
+
+    .services_element {
         width: 33vw;
     }
 
-    .services_para{
+    .services_para {
         font-size: 1.4em;
     }
 
-    .footer_rem{
+    .footer_rem {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         margin: 0 10px;
     }
-    
-    .policies{
+
+    .policies {
         flex-direction: row;
         justify-content: flex-end;
     }
 
-    .policies a{
+    .policies a {
         padding: 0 10px;
     }
 
-    .footer_line{
+    .footer_line {
         width: 90vw;
     }
 
-    .sign_up_btn_plane{
+    .sign_up_btn_plane {
         margin-left: 20px;
     }
 
-    .footer_actions a{
+    .footer_actions a {
         font-size: 1.4em;
     }
 
-    .copyright{
+    .copyright {
         font-size: 1.1em;
     }
 
-    .policies a{
+    .policies a {
         font-size: 1.1em;
     }
 
-    .form_div{
+    .form_div {
         flex-direction: row;
     }
 
-    #contact-form{
+    #contact-form {
         width: 50%;
     }
 
-    .details{
+    .details {
         width: 50%;
         height: 100%;
         display: flex;
@@ -682,106 +691,106 @@ input[type='text'], input[type='email'], textarea, input[type='password']{
         /* border-right: 2px solid black; */
     }
 
-    .details-item{
+    .details-item {
         justify-content: center;
         gap: 20px;
     }
 
-    .form_para{
+    .form_para {
         text-align: center;
         font-size: 1.4em;
     }
 }
 
 /* large tablet & laptop styles */
-@media screen and (min-width: 960px){
-    .brand_img{
-        width: 100%;
+@media screen and (min-width: 960px) {
+    .brand_img {
+        width: 100%;    
         height: 40vw;
     }
-    
-    .brand_para2{
+
+    .brand_para2 {
         margin-top: 4%;
         justify-content: center;
     }
 
-    .brand_para2 a{
+    .brand_para2 a {
         margin: 0 40px;
     }
-    
-    .nav-content{
+
+    .nav-content {
         margin: 0 20px;
     }
 
-    .sign_up_btn_container{
+    .sign_up_btn_container {
         margin: 0 40px;
     }
 
-    .copyright{
+    .copyright {
         font-size: 1.4em;
     }
 
-    .policies a{
+    .policies a {
         font-size: 1.4em;
     }
 }
 
 /* desktop styles */
-@media screen and (min-width: 1200px){
-    .brand_desc{
+@media screen and (min-width: 1200px) {
+    .brand_desc {
         height: 25vw;
         margin: 0 20px;
     }
 
-    .brand_para{
+    .brand_para {
         justify-content: center;
     }
 
-    .brand_para2{
+    .brand_para2 {
         margin-top: 2%;
     }
 
-    .brand_desc_heading{
+    .brand_desc_heading {
         display: flex;
         align-items: center;
         margin-top: 40px;
     }
 
-    .brand_desc_heading h1{
+    .brand_desc_heading h1 {
         font-size: 3.3em;
     }
 
-    .brand_para1{
+    .brand_para1 {
         font-size: 1.8em;
     }
 
-    .soil_health{
+    .soil_health {
         margin: 0 20px;
     }
 
-    .soil_health_img_container{
+    .soil_health_img_container {
         text-align: center;
     }
 
-    .rev_heading{
+    .rev_heading {
         width: 50vw;
         margin: 0 20px;
     }
 
-    .rev_para{
+    .rev_para {
         width: 55vw;
     }
 
-    .services{
+    .services {
         margin: 0 20px;
         gap: 20px;
     }
 
-    .soil_health_heading h2{
+    .soil_health_heading h2 {
         font-size: 2.3em;
     }
 
-    .soil_health_para{
+    .soil_health_para {
         font-size: 1.6em;
     }
 }
